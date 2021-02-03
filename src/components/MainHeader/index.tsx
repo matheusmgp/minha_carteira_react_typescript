@@ -7,17 +7,14 @@ const MainHeader: React.FC = () => {
         const indice = Math.floor(Math.random() * emojis.length);
         return emojis[indice];
     },[])
-    return (
-        <>
+    return (     
         <Container>
            <Toggle/>
-
            <Profile>
                <Welcome>Olá,{emoji}</Welcome>
                <UserName>Matheus Gustavo</UserName>
            </Profile>
-        </Container>
-        </>
+        </Container>       
        
     )
 }
